@@ -134,7 +134,11 @@ export default function Beranda() {
             </div>
           </div>
           <div className="destinasi-in destinasi-add">
-            <div className="destinasi-kanan" data-aos="fade-up">
+            <div
+              onClick={() => (location.href = "/reactuts/Galeri")}
+              className="destinasi-kanan"
+              data-aos="fade-up"
+            >
               <div
                 style={{
                   background: "url(./spot2.jpg)",
