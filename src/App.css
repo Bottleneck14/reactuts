@@ -1,0 +1,517 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+h1 {
+  color: white;
+  font-weight: 500;
+  font-size: 50px;
+}
+h2 {
+  color: #393e46;
+  font-weight: 500;
+  font-size: 30px;
+}
+/* NAVBAR_______________________________ */
+.navbar {
+  width: 100%;
+  height: 65px;
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f7f7f7;
+  padding: 0 100px;
+  position: fixed;
+  z-index: 1;
+}
+.logo {
+  height: 40px;
+  cursor: pointer;
+}
+.navbar ul li {
+  display: inline-block;
+  margin-left: 70px;
+}
+.navbar ul li a {
+  color: #393e46;
+  text-decoration: none;
+  font-weight: 500;
+}
+.navbar ul li a:hover {
+  color: #a4b1bc;
+}
+.navbar ul li a.active {
+  color: #a4b1bc;
+  cursor: default;
+}
+.navbar-blank {
+  width: 100%;
+  height: 65px;
+}
+.ham {
+  width: 40px;
+  display: none;
+}
+.ham-menu {
+  width: 100%;
+  height: fit-content;
+  background-color: #f7f7f7;
+  position: fixed;
+  top: 65px;
+}
+.ham-menu ul li a {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #393e46;
+  text-decoration: none;
+  font-weight: 500;
+}
+.ham-menu ul li a.active {
+  background-color: #393e46;
+  color: white;
+}
+/* mobile_______ */
+@media (width <= 1200px) {
+  .navbar {
+    padding: 0 20px;
+  }
+  .navbar ul {
+    display: none;
+  }
+  .ham {
+    display: block;
+  }
+}
+
+/* FOOTER_______________________________ */
+.footer-body {
+  width: 100%;
+  height: 40vh;
+  padding: 10px;
+  background-color: #f7f7f7;
+}
+.footer {
+  background-color: #d9d9d9;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  padding: 0 90px;
+}
+.footer-atas {
+  width: 100%;
+  height: 75%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+.footer-bawah {
+  width: 100%;
+  height: 25%;
+  border-top: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.f-atas-kanan {
+  display: flex;
+  gap: 50px;
+}
+.f-atas-kanan ul li {
+  display: block;
+  line-height: 30px;
+}
+.f-atas-kanan ul li a {
+  text-decoration: none;
+  color: #393e46;
+}
+.f-atas-kanan ul li a:hover {
+  text-decoration: underline;
+}
+.medsos {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+
+@media (width < 900px) {
+  .footer {
+    height: fit-content;
+    padding: 0 10px;
+  }
+  .footer-atas {
+    flex-direction: column;
+    padding-bottom: 20px;
+    gap: 20px;
+  }
+  .footer-bawah {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 0;
+    gap: 10px;
+  }
+}
+/* BERANDA_______________________________ */
+.cover {
+  width: 100%;
+  height: calc(100vh - 65px);
+  background-color: #f7f7f7;
+  padding: 0 10px 10px;
+}
+.cover-in {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+  padding: 0 85px;
+}
+.jelajah {
+  width: 180px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #f7f7f7;
+  border: none;
+  color: #393e46;
+  font-size: 19px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.jelajah:hover {
+  background-color: #dcdcdc;
+  transition: 0.3s;
+}
+.cover-arrow {
+  display: flex;
+  gap: 40px;
+}
+.cover-arrow img {
+  width: 60px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.cover-arrow img:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+/* ++++++++++++++++++++++++ */
+.beranda-body {
+  width: 100%;
+  height: fit-content;
+  background-color: #f7f7f7;
+  padding: 50px 100px;
+}
+.value {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  gap: 20px;
+}
+.value-in {
+  width: 100%;
+  height: 100%;
+  color: #393e46;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 10px;
+  transition: 0.5s;
+}
+.value-in:hover {
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.479);
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.banner1 {
+  width: 100%;
+  height: 70vh;
+  background: url("/banner1.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  text-align: end;
+  color: white;
+  padding: 40px;
+  cursor: default;
+}
+
+.destinasi {
+  width: 100%;
+  height: calc(100vh - 65px);
+  display: flex;
+  color: #393e46;
+  gap: 20px;
+}
+.destinasi-in {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+}
+.destinasi-kiri {
+  width: 100%;
+  height: 80%;
+  border: 3px solid #929aab;
+  border-radius: 15px;
+  cursor: default;
+  transition: 0.5s;
+}
+.destinasi-kiri:hover {
+  transform: scale(1.03);
+  transition: 0.5s;
+}
+.kiri-img {
+  width: 100%;
+  height: 90%;
+  border-radius: 12px;
+}
+.kiri-desc {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  color: #393e46;
+}
+
+.destinasi-add {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.destinasi-kanan {
+  width: 100%;
+  height: 50%;
+  border: 3px solid #929aab;
+  border-radius: 15px;
+  transition: 0.5s;
+}
+.destinasi-kanan:hover {
+  transform: scale(1.03);
+  transition: 0.5s;
+}
+.kanan-img {
+  width: 100%;
+  height: 83%;
+  border-radius: 13px;
+}
+.kanan-desc {
+  width: 100%;
+  height: 17%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  color: #393e46;
+}
+
+.banner2 {
+  width: 100%;
+  height: 50vh;
+  background: url("./banner2.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+
+/* mobile */
+@media (width < 900px) {
+  .cover-in {
+    text-align: center;
+    align-items: center;
+  }
+  .beranda-body {
+    padding: 0 10px;
+  }
+  .value {
+    flex-direction: column;
+    height: fit-content;
+    gap: 50px;
+    padding: 20px 0;
+  }
+  .banner1 {
+    text-align: center;
+    padding: 40px 0;
+  }
+  .destinasi {
+    flex-direction: column;
+    text-align: center;
+  }
+  .destinasi {
+    height: fit-content;
+  }
+  .destinasi-in {
+    height: fit-content;
+  }
+  .destinasi-kiri {
+    height: 600px;
+  }
+  .destinasi-kanan {
+    height: 350px;
+  }
+}
+
+/* galeri_______________________________ */
+.galeri-body {
+  width: 100%;
+  height: fit-content;
+  background-color: #f7f7f7;
+  padding: 50px 100px;
+}
+.title-h1 {
+  color: #393e46;
+}
+.title {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.gambar {
+  columns: 4;
+}
+.gambar img {
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+@media (width < 600px) {
+  .gambar {
+    columns: 2;
+  }
+}
+@media (600px <= width <= 1200px) {
+  .gambar {
+    columns: 3;
+  }
+}
+
+/* KONTAK_______________________________ */
+.kontak-atas {
+  width: 100%;
+  height: fit-content;
+}
+.kontak-atas {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  gap: 20px;
+}
+.h2 {
+  color: white;
+}
+.k-atas-in {
+  width: 100%;
+  background-color: #393e46;
+  border-radius: 15px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.kontak-bawah {
+  width: 100%;
+  display: flex;
+}
+.k-bawah-isi {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+form {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+form input {
+  height: 50px;
+  width: 90%;
+  font-size: 20px;
+}
+form textarea {
+  width: 90%;
+  height: 200px;
+  font-size: 20px;
+}
+.form-button {
+  width: 90%;
+  height: 50px;
+  font-size: 20px;
+  background-color: #393e46;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.form-button:hover {
+  background-color: #929aab;
+}
+iframe {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #393e46;
+  border-radius: 5px;
+}
+
+/* mobile */
+@media (width < 900px) {
+  .galeri-body {
+    padding: 0 10px;
+  }
+  .kontak-atas {
+    height: fit-content;
+    flex-direction: column;
+  }
+  .k-atas-in {
+    padding: 20px 20px;
+  }
+  .kontak-bawah {
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+  }
+  form input {
+    width: 100%;
+  }
+  form textarea {
+    width: 100%;
+  }
+  .form-button {
+    width: 100%;
+  }
+}
