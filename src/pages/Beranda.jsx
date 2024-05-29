@@ -71,7 +71,10 @@ export default function Beranda() {
               Temukan kedamaian dan keindahan alam di Hutan Pinus Pengger
             </p>
           </span>
-          <button onClick={() => (location.href = "/Wip")} className="jelajah">
+          <button
+            onClick={() => (location.href = "/reactuts/wip")}
+            className="jelajah"
+          >
             Jelajahi
           </button>
           <div className="cover-arrow">
@@ -169,7 +172,10 @@ export default function Beranda() {
             Hutan Pinus Pengger
           </h4>
           <br />
-          <button onClick={() => (location.href = "/Wip")} className="jelajah">
+          <button
+            onClick={() => (location.href = "/reactuts/wip")}
+            className="jelajah"
+          >
             Jelajahi
           </button>
         </div>
