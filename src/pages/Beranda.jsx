@@ -116,7 +116,7 @@ export default function Beranda() {
             </span>
             <br />
             <div
-              onClick={() => (location.href = "/Galeri")}
+              onClick={() => (location.href = "/reactuts/galeri")}
               className="destinasi-kiri"
               data-aos="fade-up"
             >
