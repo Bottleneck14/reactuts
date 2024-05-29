@@ -14,6 +14,11 @@ h2 {
   font-weight: 500;
   font-size: 30px;
 }
+@media (width < 600) {
+  h1 {
+    font-size: 10vw;
+  }
+}
 /* NAVBAR_______________________________ */
 .navbar {
   width: 100%;
@@ -345,6 +350,7 @@ h2 {
   .cover-in {
     text-align: center;
     align-items: center;
+    padding: 0 10px;
   }
   .beranda-body {
     padding: 0 10px;
@@ -374,6 +380,10 @@ h2 {
   }
   .destinasi-kanan {
     height: 350px;
+  }
+  .banner2 {
+    height: fit-content;
+    padding: 50px 0;
   }
 }
 
@@ -413,6 +423,9 @@ h2 {
 @media (600px <= width <= 1200px) {
   .gambar {
     columns: 3;
+  }
+  .banner2 {
+    height: 900px;
   }
 }
 
@@ -467,11 +480,13 @@ form input {
   height: 50px;
   width: 90%;
   font-size: 20px;
+  padding: 0 10px;
 }
 form textarea {
   width: 90%;
   height: 200px;
   font-size: 20px;
+  padding: 0 10px;
 }
 .form-button {
   width: 90%;

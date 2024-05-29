@@ -16,7 +16,7 @@ export default function Kontak() {
     },
     {
       logo: "./kontak3.png",
-      judul: "pinuspengger@gmail.com",
+      judul: "pinuspengger @gmail.com",
       desc: "Dapatkan informasi kontak kami untuk pertanyaan atau bantuan yang Anda butuhkan.",
     },
   ];
